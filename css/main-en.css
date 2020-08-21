@@ -1,0 +1,976 @@
+/*==================================================================================
+                                    General Styles
+==================================================================================*/
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    direction: ltr;
+    min-height: 1000px;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1da1f2;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+
+/*==================================================================================
+                                    Main Styles
+==================================================================================*/
+
+
+/*********************** Page Language Section *************************/
+
+.page-language {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 6px;
+    margin-bottom: 0;
+}
+
+.page-language .lang {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    cursor: pointer;
+}
+
+.page-language .lang .lang-img {
+    margin-right: 5px;
+}
+
+.page-language .lang .lang-name {
+    font-family: "regular";
+    font-size: 12px;
+    padding: 2px 0;
+    margin-bottom: 0;
+    color: #9c9c9c;
+    transition: all 0.4s ease-in-out;
+}
+
+.page-language .lang .lang-name::after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: inherit;
+    font-size: 8px;
+    margin-left: 5px;
+}
+
+.page-language .lang .lang-name:hover {
+    color: #0a5197;
+}
+
+
+/*** Hidden lang list ***/
+
+.lang-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 155px;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    background-color: transparent;
+}
+
+.page-language .lang .lang-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    z-index: 99991;
+    box-shadow: -3px 3px 5px #0000001c, 3px -3px 5px #0000001c;
+}
+
+.page-language .lang .lang-list li {
+    background-color: #fff;
+    padding: 7px 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.page-language .lang .lang-list li a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.page-language .lang .lang-list li:hover {
+    background-color: #1da1f2;
+}
+
+.page-language .lang .lang-list li:hover a {
+    color: #fff;
+}
+
+
+/************************** Header Section *****************************/
+
+
+/********* Start of Logo Part *********/
+
+.header {
+    height: 140px;
+    margin-bottom: 15px;
+}
+
+.header .logo {
+    width: 100%;
+}
+
+.header .logo img {
+    max-width: 100%;
+}
+
+
+/**** Start of Page Controls Part ****/
+
+.header .page-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+/**** Start of Search-bar Part ****/
+
+.header .page-controls .search-bar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 40px;
+}
+
+.header .page-controls .search-bar input {
+    width: 475px;
+    height: 45px;
+    padding-left: 20px;
+    border: 1px solid #ededed;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.header .page-controls .search-bar input::placeholder {
+    font-family: "regular";
+    font-size: 14px;
+    color: #000;
+}
+
+.header .page-controls .search-bar input:hover {
+    border: 1px solid #0a5197;
+}
+
+.header .page-controls .search-bar button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
+.header .page-controls .search-bar button .search-bar-icon {
+    font-size: 18px;
+    color: #0a5197;
+}
+
+
+/**** Start of User-Terms Part ****/
+
+.header .page-controls .user-terms {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 14px;
+}
+
+.header .page-controls .user-terms .config,
+.header .page-controls .user-terms .like,
+.header .page-controls .user-terms .shopping {
+    position: relative;
+}
+
+.header .page-controls .user-terms .config,
+.header .page-controls .user-terms .like {
+    margin-right: 20px;
+}
+
+.header .page-controls .user-terms .config:hover::after,
+.header .page-controls .user-terms .like:hover::after,
+.header .page-controls .user-terms .shopping:hover::after {
+    transform: scaleX(1);
+    visibility: visible;
+}
+
+.header .page-controls .user-terms .config::after,
+.header .page-controls .user-terms .like::after,
+.header .page-controls .user-terms .shopping::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    visibility: hidden;
+    background-color: #0a5197;
+    transition: all 0.4s ease-in-out;
+}
+
+.header .page-controls .user-terms .config .config-link,
+.header .page-controls .user-terms .like .like-link,
+.header .page-controls .user-terms .shopping .shopping-link {
+    display: flex;
+    flex-direction: row;
+    color: #0a5197;
+    text-decoration: none;
+}
+
+.header .page-controls .user-terms .config .config-icon,
+.header .page-controls .user-terms .like .like-icon,
+.header .page-controls .user-terms .shopping .shopping-icon {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.header .page-controls .user-terms .config .config-name,
+.header .page-controls .user-terms .like .like-name,
+.header .page-controls .user-terms .shopping .shopping-name {
+    font-family: "regular";
+    font-size: 16px;
+}
+
+
+/**** Hidden User Config List ****/
+
+.header .page-controls .user-terms .config .config-list {
+    position: absolute;
+    top: 100%;
+    right: -13%;
+    width: 130px;
+    display: none;
+    z-index: 99999;
+    box-shadow: -3px 3px 5px #0000001c, 3px -3px 5px #0000001c;
+}
+
+.header .page-controls .user-terms .config-list li {
+    background-color: #fff;
+    padding: 7px 15px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.header .page-controls .user-terms .config-list li a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.header .page-controls .user-terms .config-list li:hover {
+    background-color: #1da1f2;
+}
+
+.header .page-controls .user-terms .config-list li:hover a {
+    color: #fff;
+}
+
+
+/**************************** Nav Section ******************************/
+
+.nav {
+    background-color: #1da1f2;
+    padding: 10px 0;
+}
+
+.nav .nav-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav .nav-content .nav-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
+.nav .nav-content .nav-list li {
+    margin-right: 25px;
+}
+
+.nav .nav-content .nav-list li .nav-links {
+    font-family: "medium";
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.nav .nav-content .nav-list li .nav-links::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    visibility: hidden;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav .nav-content .nav-list li .nav-links:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+/**** Start Products Hidden List ****/
+
+.nav .nav-content .products-title {
+    position: relative;
+    display: block;
+}
+
+.nav .nav-content .products-title .products-list {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index: 9999;
+    width: 150px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: -3px 3px 5px #0000001c, 3px -3px 5px #0000001c;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav .nav-content .products-title .products-list li {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+.nav .nav-content .products-title .products-list li:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: #e1e1e1;
+    width: 80%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav .nav-content .products-title .products-list li a {
+    color: #000;
+    text-decoration: none;
+    font-family: "medium";
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav .nav-content .products-title .products-list li a:hover {
+    color: #0a5197;
+}
+
+.nav .nav-content .products-title:hover .products-list {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/**** End Products Hidden List ****/
+
+.nav .nav-content .hot-line a {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav .nav-content .hot-line a i {
+    font-size: 20px;
+    margin-right: 8px;
+    margin-top: 3px;
+}
+
+.nav .nav-content .hot-line a p {
+    font-family: "medium";
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.nav .nav-content .hot-line a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    visibility: hidden;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav .nav-content .hot-line a:hover::after {
+    transform: scaleX(1);
+    visibility: visible;
+}
+
+
+/************************ Main Slider Section **************************/
+
+.main-slider {
+    margin-top: 15px;
+}
+
+.main-slider .owl-carousel .owl-nav .owl-prev,
+.main-slider .owl-carousel .owl-nav .owl-next {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    border-radius: 50%;
+    outline: 0px;
+}
+
+.main-slider .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+}
+
+.main-slider .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+
+.main-slider .owl-carousel .owl-nav .owl-prev span,
+.main-slider .owl-carousel .owl-nav .owl-next span {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-slider .owl-carousel .owl-nav .owl-prev span:hover,
+.main-slider .owl-carousel .owl-nav .owl-next span:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.main-slider .owl-carousel .owl-dots {
+    position: absolute;
+    right: 50%;
+    bottom: 30px;
+    transform: translateX(50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.main-slider .owl-carousel button.owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    outline: 0;
+}
+
+.main-slider .owl-carousel button.owl-dot span {
+    background-color: #575757;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-slider .owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: #1da1f2;
+}
+
+.main-slider .owl-carousel .owl-dots .owl-dot.active span {
+    background-color: #1da1f2;
+}
+
+
+/************************** Gallary Section ****************************/
+
+.gallary {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.gallary-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallary .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 130px;
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.gallary .element:last-child {
+    margin-right: 0px
+}
+
+.gallary .element .element-img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.gallary .element .element-img img {
+    transition: all 0.4s ease-in-out;
+}
+
+.gallary .element .element-name {
+    color: #0a5197;
+    text-decoration: none;
+    font-family: "medium";
+    font-size: 20px;
+    position: relative;
+}
+
+.gallary .element .element-name::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    visibility: hidden;
+    transform: scaleX(0);
+    background-color: #0a5197;
+    transition: all 0.4s ease-in-out;
+}
+
+.gallary .element:hover .element-name::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.gallary .element:hover .element-img img {
+    transform: translateY(-10px);
+}
+
+
+/************************** Couses Section *****************************/
+
+.courses {
+    background-color: #f7f7f7;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.courses-title {
+    margin-bottom: 30px;
+    font-family: "bold";
+    font-size: 22px;
+    color: #0a5197;
+    position: relative;
+    margin-left: 15px;
+}
+
+.courses-title::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 4px;
+    width: 3px;
+    height: 62%;
+    background-color: #edd10c;
+}
+
+.courses-title .show-more {
+    font-family: "regular";
+    font-size: 16px;
+    color: #808080;
+    text-decoration: none;
+    margin-left: 30px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.courses-title .show-more::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    visibility: visible;
+    transform: scaleX(1);
+    background-color: #808080;
+    transition: all 0.4s ease-in-out;
+}
+
+.courses-title .show-more:hover::after {
+    visibility: hidden;
+    transform: scaleX(0);
+}
+
+.courses-title .show-more:hover {
+    color: #0a5197;
+}
+
+.item {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.item .item-img-box {
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.item .item-img-box img {
+    max-width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.item .item-img-box:hover img {
+    transform: scale(1.02)
+}
+
+.item .item-content .item-name {
+    height: 45px;
+    display: block;
+    color: #0a5197;
+    text-decoration: none;
+    position: relative;
+    font-family: "regular";
+    font-size: 16px;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+}
+
+.item .item-content .price-box {
+    text-align: left;
+}
+
+.item .item-content .price-box .item-price {
+    color: #0a5197;
+    font-family: "bold";
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.item .item-content .price-box .last-price {
+    font-family: "medium";
+    font-size: 16px;
+    color: #979695;
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.owl-carousel button.owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    outline: 0;
+}
+
+.owl-carousel button.owl-dot span {
+    background-color: #acacac;
+    transition: all 0.4s ease-in-out;
+}
+
+.owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: #1da1f2;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span {
+    background-color: #1da1f2;
+}
+
+
+/************************* Products Section ****************************/
+
+.products {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+
+/************************ Newsletter Section ***************************/
+
+.newsletter {
+    background-color: #1da1f2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.newsletter .newsletter-content h3 {
+    font-family: "bold";
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter .newsletter-content p {
+    font-family: "medium";
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.newsletter .newsletter-content .email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.newsletter .newsletter-content .email input {
+    width: 375px;
+    height: 45px;
+    outline: none;
+    border: none;
+    font-family: "regular";
+    font-size: 16px;
+    padding-left: 20px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.newsletter .newsletter-content .email input::placeholder {
+    color: #fff;
+    font-family: "regular";
+    font-size: 14px;
+}
+
+.newsletter .newsletter-content .email button {
+    width: 100px;
+    height: 45px;
+    outline: none;
+    border: none;
+    color: #0a5197;
+    font-family: "bold";
+    font-size: 14px;
+}
+
+
+/************************** Footer Section *****************************/
+
+.footer {
+    padding-top: 75px;
+    padding-bottom: 20px;
+}
+
+.footer .footer-top {
+    margin-bottom: 65px;
+}
+
+.footer .footer-top .footer-logo {
+    width: 100%;
+}
+
+.footer .footer-top .footer-logo img {
+    max-width: 100%;
+}
+
+.footer .footer-top .footer-col h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "bold";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #0a5197;
+}
+
+.footer .footer-top .footer-col h3 a {
+    color: #0a5197;
+    text-decoration: none;
+}
+
+.footer .footer-top .footer-col .info-list li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-top .footer-col .info-list li a {
+    color: #0a5197;
+    text-decoration: none;
+    font-family: "regular";
+    font-size: 15px;
+    position: relative;
+}
+
+.footer .footer-top .footer-col .info-list li a::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    visibility: hidden;
+    transform: scaleX(0);
+    background-color: #0a5197;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer .footer-top .footer-col .info-list li a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.footer .footer-top .four h3 {
+    margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-col .footer-icon-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .footer-top .footer-col .footer-icon-list li {
+    margin-right: 5px;
+}
+
+.footer .footer-top .footer-col .footer-icon-list li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+}
+
+.footer .footer-top .footer-col .footer-icon-list li:nth-child(1) a {
+    background: #3a5a97;
+}
+
+.footer .footer-top .footer-col .footer-icon-list li:nth-child(2) a {
+    background: #f7cb00;
+}
+
+.footer .footer-top .footer-col .footer-icon-list li:nth-child(3) a {
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
+    background: linear-gradient(-45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.footer .footer-top .footer-col .footer-icon-list li:nth-child(4) a {
+    background: #2ac5f4;
+}
+
+.footer .footer-top .footer-col .footer-icon-list li a:hover {
+    transform: translateY(-7px);
+}
+
+
+/*** Footer Bottom ***/
+
+.footer .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .footer-bottom .copyrights {
+    display: flex;
+    flex-direction: row;
+    font-family: "regular";
+    font-size: 15px;
+    color: #0a5197;
+}
+
+.footer .footer-bottom .copyrights .first-p {
+    margin-right: 4px;
+}
+
+.footer .footer-bottom .copyrights .last-p img {
+    margin-left: 5px;
+}
+
+.footer .footer-bottom .payment img {
+    max-width: 100%;
+}
+
+
+/*==================================================================================
+                                    Page Overlay
+==================================================================================*/
+
+.overlay-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    background-color: transparent;
+}
+
+.overlay-box2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    background-color: transparent;
+}
+
+
+/*==================================================================================
+                                    Page Overlay
+==================================================================================*/
+
+.loading-overlay {
+    background: #fff;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+}
+
+.loading-overlay img {
+    position: fixed;
+    margin: auto;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}

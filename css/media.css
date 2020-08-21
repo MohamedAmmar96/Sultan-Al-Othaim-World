@@ -1,0 +1,798 @@
+/**************** Extra Small Screens From 501px to 767px ****************/
+
+@media (max-width:767px) {
+    .page-language {
+        display: none;
+    }
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        height: auto;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .header .hidden-tools {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin-top: 70px;
+    }
+    /*** Hidden Buttons Start ***/
+    .header .hidden-tools .hidden-menu,
+    .header .hidden-tools .hidden-search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header .hidden-tools .hidden-menu {
+        margin-left: 35px;
+    }
+    .header .hidden-tools .hidden-menu .hidden-menu-link,
+    .header .hidden-tools .hidden-search .hidden-search-link {
+        color: #0a5197;
+        text-decoration: none;
+        position: relative;
+    }
+    .header .hidden-tools .hidden-menu .hidden-menu-link::after,
+    .header .hidden-tools .hidden-search .hidden-search-link::after {
+        content: "";
+        position: absolute;
+        bottom: 4px;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        visibility: hidden;
+        background-color: #0a5197;
+        transition: all 0.4s ease-in-out;
+    }
+    .header .hidden-tools .hidden-menu .hidden-menu-link:hover::after,
+    .header .hidden-tools .hidden-search .hidden-search-link:hover::after {
+        transform: scaleX(1);
+        visibility: visible;
+    }
+    .header .hidden-tools .hidden-menu .hidden-menu-link .menu-btn,
+    .header .hidden-tools .hidden-search .hidden-search-link .search-btn {
+        font-size: 28px;
+    }
+    .open-search::after {
+        content: "\e86f";
+        font-family: 'Linearicons-Free';
+    }
+    .close-search::after {
+        content: "\e870";
+        font-family: 'Linearicons-Free';
+    }
+    /*** Hidden Buttons End ***/
+    .header .page-controls {
+        justify-content: center;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .header .page-controls .user-terms {
+        justify-content: center;
+        width: 100%;
+    }
+    .header .page-controls .user-terms .config {
+        margin-left: 35px;
+    }
+    .header .page-controls .user-terms .config .config-icon,
+    .header .page-controls .user-terms .shopping .shopping-icon {
+        font-size: 28px;
+        margin-left: 0px;
+    }
+    .header .page-controls .user-terms .config .config-name,
+    .header .page-controls .user-terms .shopping .shopping-name,
+    .header .page-controls .user-terms .like {
+        display: none;
+    }
+    .header .page-controls .user-terms .config .config-list {
+        top: 35px;
+        right: -55px
+    }
+    .header .page-controls .user-terms .config::after,
+    .header .page-controls .user-terms .like::after,
+    .header .page-controls .user-terms .shopping::after {
+        bottom: -5px;
+    }
+    .nav {
+        display: none;
+    }
+    .main-slider {
+        margin-top: 0;
+    }
+    .main-slider .owl-carousel .owl-dots {
+        bottom: 10px;
+    }
+    .gallary {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .gallary .element {
+        margin-left: 0;
+        align-items: center;
+        width: 100%;
+    }
+    .gallary .element .element-img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .gallary .element .element-img img {
+        max-width: 100%;
+    }
+    .gallary .element .element-name {
+        font-size: 16px;
+    }
+    .courses {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .item {
+        margin-bottom: 20px;
+    }
+    .item .item-content .price-box {
+        margin-bottom: 0;
+    }
+    .products {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .newsletter {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .newsletter .newsletter-content p {
+        font-size: 17px;
+    }
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .footer .footer-top .footer-logo {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer .footer-top .footer-col h3 {
+        margin-bottom: 10px;
+    }
+    .footer .footer-top .footer-col .line {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer .footer-top .one h3,
+    .footer .footer-top .two h3,
+    .footer .footer-top .three h3 {
+        margin-right: 15px;
+    }
+    .footer .footer-top .one h3::after,
+    .footer .footer-top .two h3::after,
+    .footer .footer-top .three h3::after {
+        content: '\f0dd';
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 600;
+        text-decoration: inherit;
+        position: absolute;
+        left: 30px;
+    }
+    .footer .footer-top .footer-col .info-list li {
+        margin-right: 25px;
+    }
+    .footer .footer-top .four {
+        text-align: center;
+    }
+    .footer .footer-top .four h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer .footer-top .footer-col .footer-icon-list {
+        justify-content: center;
+    }
+    /*** Footer Bottom ***/
+    .footer .footer-bottom {
+        flex-direction: column;
+    }
+    .footer .footer-bottom .copyrights {
+        flex-direction: column;
+        text-align: center;
+        order: 2;
+        margin-bottom: 0;
+    }
+    .footer .footer-bottom .copyrights .first-p {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .footer .footer-bottom .payment {
+        width: 350px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        order: 1;
+        margin-bottom: 25px;
+    }
+    /*** Start Search Box ***/
+    .header .page-controls .search-box {
+        position: absolute;
+        top: 120px;
+        left: 88%;
+        width: 350px;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 99999;
+        display: none;
+        background-color: #fff;
+        box-shadow: 3px 3px 5px #0000001c, -3px -3px 5px #0000001c;
+    }
+    .header .page-controls .search-box .search-bar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        width: calc(100% - 30px);
+        margin-right: 0;
+        transform: translate(-50%, -50%);
+    }
+    .header .page-controls .search-box .search-bar input {
+        width: 100%;
+    }
+    /****** Start Of Side Menu ******/
+    .side-menu {
+        position: fixed;
+        top: 0;
+        right: -580px;
+        width: 260px;
+        height: 100%;
+        z-index: 99999;
+        overflow: auto;
+        background-color: #1da1f2;
+        padding: 60px 20px 20px 0px;
+        transition: all 0.4s ease-in-out;
+    }
+    .side-menu .close {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        opacity: 1;
+        font-size: 22px;
+    }
+    .side-menu .menu-list {
+        line-height: 1.7;
+        font-family: "medium";
+        margin-bottom: 0;
+    }
+    .side-menu .menu-list>li {
+        margin-bottom: 10px;
+    }
+    .side-menu .menu-list>li .menu-list-links {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .side-menu .menu-list .products-menu {
+        position: relative;
+    }
+    .side-menu .menu-list .products-menu>a::after {
+        content: '\f0dd';
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 600;
+        text-decoration: inherit;
+        position: absolute;
+        left: 30px;
+        top: -3px;
+    }
+    .side-menu .menu-list .products-menu-list {
+        font-family: "medium";
+        font-size: 15px;
+        display: none;
+    }
+    .side-menu .menu-list .products-menu-list li {
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+    .side-menu .menu-list .products-menu-list li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .side-menu .account,
+    .side-menu .language {
+        color: #fff;
+    }
+    .side-menu .account p,
+    .side-menu .language p {
+        font-family: "medium";
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .side-menu .account p::after,
+    .side-menu .language p::after {
+        content: '\f0dd';
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 600;
+        text-decoration: inherit;
+        position: absolute;
+        left: 30px;
+    }
+    .side-menu .account ul,
+    .side-menu .language ul {
+        margin-bottom: 0;
+        display: none;
+    }
+    .side-menu .account ul li,
+    .side-menu .language ul li {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .side-menu .account ul li a,
+    .side-menu .language ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .side-menu .small-hot-line {
+        margin-top: 20px;
+    }
+    .side-menu .small-hot-line a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .side-menu .small-hot-line a i {
+        font-size: 16px;
+        margin-left: 5px;
+        margin-top: 3px;
+    }
+    .side-menu .small-hot-line a p {
+        font-family: "medium";
+        font-size: 16px;
+    }
+    .menu-open {
+        right: 0px;
+    }
+}
+
+
+/**************** Extra Small Screens From 0 to 500px ****************/
+
+@media (max-width:500px) {
+    .header .hidden-tools {
+        margin-top: 40px;
+    }
+    .header .hidden-tools .hidden-menu .hidden-menu-link .menu-btn,
+    .header .hidden-tools .hidden-search .hidden-search-link .search-btn {
+        font-size: 25px;
+    }
+    .header .hidden-tools .hidden-menu {
+        margin-left: 25px;
+    }
+    .header .page-controls {
+        margin-top: 30px;
+    }
+    .header .page-controls .user-terms .config .config-icon,
+    .header .page-controls .user-terms .shopping .shopping-icon {
+        font-size: 25px;
+    }
+    .header .page-controls .user-terms .config {
+        margin-left: 25px;
+    }
+    .main-slider .owl-carousel .owl-dots {
+        bottom: 5px;
+    }
+    .footer .footer-bottom .copyrights {
+        font-size: 14px;
+    }
+    .footer .footer-bottom .payment {
+        width: 300px;
+    }
+    /*** Search Box ***/
+    .header .page-controls .search-box {
+        left: 45%;
+        top: 80px;
+        width: 300px;
+    }
+}
+
+
+/*********************  Small Screens *********************/
+
+@media (min-width:768px) and (max-width:991px) {
+    .page-language {
+        display: none;
+    }
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+        height: auto;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .header .hidden-tools {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin-top: 70px;
+    }
+    /*** Hidden Buttons Start ***/
+    .header .hidden-tools .hidden-menu,
+    .header .hidden-tools .hidden-search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header .hidden-tools .hidden-menu {
+        margin-left: 35px;
+    }
+    .header .hidden-tools .hidden-menu .hidden-menu-link,
+    .header .hidden-tools .hidden-search .hidden-search-link {
+        color: #0a5197;
+        text-decoration: none;
+        position: relative;
+    }
+    .header .hidden-tools .hidden-menu .hidden-menu-link::after,
+    .header .hidden-tools .hidden-search .hidden-search-link::after {
+        content: "";
+        position: absolute;
+        bottom: 4px;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        visibility: hidden;
+        background-color: #0a5197;
+        transition: all 0.4s ease-in-out;
+    }
+    .header .hidden-tools .hidden-menu .hidden-menu-link:hover::after,
+    .header .hidden-tools .hidden-search .hidden-search-link:hover::after {
+        transform: scaleX(1);
+        visibility: visible;
+    }
+    .header .hidden-tools .hidden-menu .hidden-menu-link .menu-btn,
+    .header .hidden-tools .hidden-search .hidden-search-link .search-btn {
+        font-size: 28px;
+    }
+    .open-search::after {
+        content: "\e86f";
+        font-family: 'Linearicons-Free';
+    }
+    .close-search::after {
+        content: "\e870";
+        font-family: 'Linearicons-Free';
+    }
+    /*** Hidden Buttons End ***/
+    .header .page-controls {
+        justify-content: center;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .header .page-controls .user-terms {
+        justify-content: center;
+        width: 100%;
+    }
+    .header .page-controls .user-terms .config {
+        margin-left: 35px;
+    }
+    .header .page-controls .user-terms .config .config-icon,
+    .header .page-controls .user-terms .shopping .shopping-icon {
+        font-size: 28px;
+        margin-left: 0px;
+    }
+    .header .page-controls .user-terms .config .config-name,
+    .header .page-controls .user-terms .shopping .shopping-name,
+    .header .page-controls .user-terms .like {
+        display: none;
+    }
+    .header .page-controls .user-terms .config .config-list {
+        top: 35px;
+        right: -55px
+    }
+    .header .page-controls .user-terms .config::after,
+    .header .page-controls .user-terms .like::after,
+    .header .page-controls .user-terms .shopping::after {
+        bottom: -5px;
+    }
+    .nav {
+        display: none;
+    }
+    .main-slider {
+        margin-top: 0;
+    }
+    .main-slider .owl-carousel .owl-dots {
+        bottom: 10px;
+    }
+    .gallary {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .gallary .element {
+        margin-left: 0;
+        align-items: center;
+        width: 100%;
+    }
+    .gallary .element .element-img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .gallary .element .element-img img {
+        max-width: 100%;
+    }
+    .gallary .element .element-name {
+        font-size: 16px;
+    }
+    .courses {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .item {
+        margin-bottom: 20px;
+    }
+    .item .item-content .price-box {
+        margin-bottom: 0;
+    }
+    .products {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .newsletter {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .newsletter .newsletter-content p {
+        font-size: 18px;
+    }
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .footer .footer-top .footer-logo {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer .footer-top .footer-col h3 {
+        margin-bottom: 10px;
+    }
+    .footer .footer-top .footer-col .line {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer .footer-top .one h3,
+    .footer .footer-top .two h3,
+    .footer .footer-top .three h3 {
+        margin-right: 15px;
+    }
+    .footer .footer-top .one h3::after,
+    .footer .footer-top .two h3::after,
+    .footer .footer-top .three h3::after {
+        content: '\f0dd';
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 600;
+        text-decoration: inherit;
+        position: absolute;
+        left: 30px;
+    }
+    .footer .footer-top .footer-col .info-list li {
+        margin-right: 25px;
+    }
+    .footer .footer-top .four {
+        text-align: center;
+    }
+    .footer .footer-top .four h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer .footer-top .footer-col .footer-icon-list {
+        justify-content: center;
+    }
+    /*** Footer Bottom ***/
+    .footer .footer-bottom {
+        flex-direction: column;
+    }
+    .footer .footer-bottom .copyrights {
+        flex-direction: column;
+        text-align: center;
+        order: 2;
+        margin-bottom: 0;
+    }
+    .footer .footer-bottom .copyrights .first-p {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .footer .footer-bottom .payment {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        order: 1;
+        margin-bottom: 25px;
+    }
+    /*** Start Search Box ***/
+    .header .page-controls .search-box {
+        position: absolute;
+        top: 120px;
+        left: 70%;
+        transform: translateX(50%);
+        width: 350px;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 99999;
+        display: none;
+        background-color: #fff;
+        box-shadow: 3px 3px 5px #0000001c, -3px -3px 5px #0000001c;
+    }
+    .header .page-controls .search-box .search-bar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        width: calc(100% - 30px);
+        margin-right: 0;
+        transform: translate(-50%, -50%);
+    }
+    .header .page-controls .search-box .search-bar input {
+        width: 100%;
+    }
+    /****** Start Of Side Menu ******/
+    .side-menu {
+        position: fixed;
+        top: 0;
+        right: -580px;
+        width: 260px;
+        height: 100%;
+        z-index: 99999;
+        overflow: auto;
+        background-color: #1da1f2;
+        padding: 60px 20px 20px 0px;
+        transition: all 0.4s ease-in-out;
+    }
+    .side-menu .close {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        opacity: 1;
+        font-size: 22px;
+    }
+    .side-menu .menu-list {
+        line-height: 1.7;
+        font-family: "medium";
+        margin-bottom: 0;
+    }
+    .side-menu .menu-list>li {
+        margin-bottom: 10px;
+    }
+    .side-menu .menu-list>li .menu-list-links {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .side-menu .menu-list .products-menu {
+        position: relative;
+    }
+    .side-menu .menu-list .products-menu>a::after {
+        content: '\f0dd';
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 600;
+        text-decoration: inherit;
+        position: absolute;
+        left: 30px;
+        top: -3px;
+    }
+    .side-menu .menu-list .products-menu-list {
+        font-family: "medium";
+        font-size: 15px;
+        display: none;
+    }
+    .side-menu .menu-list .products-menu-list li {
+        margin-right: 10px;
+        margin-bottom: 0px;
+    }
+    .side-menu .menu-list .products-menu-list li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .side-menu .account,
+    .side-menu .language {
+        color: #fff;
+    }
+    .side-menu .account p,
+    .side-menu .language p {
+        font-family: "medium";
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .side-menu .account p::after,
+    .side-menu .language p::after {
+        content: '\f0dd';
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: 600;
+        text-decoration: inherit;
+        position: absolute;
+        left: 30px;
+    }
+    .side-menu .account ul,
+    .side-menu .language ul {
+        margin-bottom: 0;
+        display: none;
+    }
+    .side-menu .account ul li,
+    .side-menu .language ul li {
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .side-menu .account ul li a,
+    .side-menu .language ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .side-menu .small-hot-line {
+        margin-top: 20px;
+    }
+    .side-menu .small-hot-line a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .side-menu .small-hot-line a i {
+        font-size: 16px;
+        margin-left: 5px;
+        margin-top: 3px;
+    }
+    .side-menu .small-hot-line a p {
+        font-family: "medium";
+        font-size: 16px;
+    }
+    .menu-open {
+        right: 0px;
+    }
+}
+
+
+/*********************  Medium Screens ********************/
+
+@media (min-width:992px)and (max-width:1199px) {
+    .side-menu {
+        display: none;
+    }
+    .header .page-controls .search-bar {
+        margin-right: 0px;
+    }
+    .header .page-controls .search-bar input {
+        width: 390px;
+    }
+    .header .page-controls .user-terms .config .config-list {
+        top: 37px;
+    }
+}
+
+
+/*********************  Large Screens *********************/
+
+@media (min-width:1200px) {
+    .side-menu {
+        display: none;
+    }
+}
