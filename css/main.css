@@ -528,20 +528,20 @@ body {
 }
 
 
-/************************** Gallary Section ****************************/
+/************************** services Section ****************************/
 
-.gallary {
+.services {
     margin-top: 60px;
     margin-bottom: 70px;
 }
 
-.gallary-content {
+.services-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.gallary .element {
+.services .element {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -551,20 +551,20 @@ body {
     margin-right: auto; */
 }
 
-.gallary .element:last-child {
+.services .element:last-child {
     margin-left: 0px
 }
 
-.gallary .element .element-img {
+.services .element .element-img {
     width: 100%;
     margin-bottom: 25px;
 }
 
-.gallary .element .element-img img {
+.services .element .element-img img {
     transition: all 0.4s ease-in-out;
 }
 
-.gallary .element .element-name {
+.services .element .element-name {
     color: #0a5197;
     text-decoration: none;
     font-family: "medium";
@@ -572,7 +572,7 @@ body {
     position: relative;
 }
 
-.gallary .element .element-name::after {
+.services .element .element-name::after {
     content: "";
     position: absolute;
     right: 0px;
@@ -585,12 +585,12 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-.gallary .element:hover .element-name::after {
+.services .element:hover .element-name::after {
     visibility: visible;
     transform: scaleX(1);
 }
 
-.gallary .element:hover .element-img img {
+.services .element:hover .element-img img {
     transform: translateY(-10px);
 }
 

@@ -45,19 +45,19 @@ $(document).ready(function() {
 
     // This is to Open Configuration menu in 
     $(".user-terms .config a").click(function() {
-        $(".overlay-box").fadeIn(600);
+        $(".overlay-box").fadeIn(300);
     });
 
     $(".user-terms .config a").click(function() {
-        $(".config .config-list").slideDown(600);
+        $(".config .config-list").slideDown(300);
     });
 
     $(".overlay-box").click(function() {
-        $(".overlay-box").fadeOut(600);
+        $(".overlay-box").fadeOut(300);
     });
 
     $(".overlay-box").click(function() {
-        $(".config .config-list").slideUp(600);
+        $(".config .config-list").slideUp(300);
     });
 
 
@@ -184,8 +184,8 @@ $(document).ready(function() {
 
     //this is to make the features part as owl-carousel slider  
     if ($(window).width() <= 991) {
-        $(".gallary-content").addClass("owl-carousel owl-theme");
-        $(".gallary-content .element").removeClass("owl-carousel");
+        $(".services-content").addClass("owl-carousel owl-theme");
+        $(".services-content .element").removeClass("owl-carousel");
         $('.owl-carousel').owlCarousel({
             loop: false,
             margin: 10,
@@ -193,11 +193,11 @@ $(document).ready(function() {
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 2,
+                    items: 1,
                     nav: false,
                     loop: false
                 },
-                500: {
+                480: {
                     items: 2,
                     nav: false,
                     loop: false
@@ -205,8 +205,8 @@ $(document).ready(function() {
             }
         })
     } else {
-        $(".gallary-content").removeClass("owl-carousel");
-        $(".gallary-content .element").removeClass("owl-carousel");
+        $(".services-content").removeClass("owl-carousel");
+        $(".services-content .element").removeClass("owl-carousel");
     };
 
 
@@ -221,23 +221,23 @@ $(document).ready(function() {
 
     //This is to Open Search Box in small screens
     $(".hidden-tools .hidden-search").click(function() {
-        $(".overlay-box2").fadeIn(600);
+        $(".overlay-box2").fadeIn(300);
     });
 
     $(".hidden-tools .hidden-search").click(function() {
         $(".hidden-search a span").removeClass("open-search")
         $(".hidden-search a span").addClass("close-search")
-        $(".search-box").slideDown(600);
+        $(".search-box").slideDown(300);
     });
 
     $(".overlay-box2").click(function() {
-        $(".overlay-box2").fadeOut(600);
+        $(".overlay-box2").fadeOut(300);
     });
 
     $(".overlay-box2").click(function() {
         $(".hidden-search a span").addClass("open-search")
         $(".hidden-search a span").removeClass("close-search")
-        $(".search-box").slideUp(600);
+        $(".search-box").slideUp(300);
     });
 
 
