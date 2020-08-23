@@ -54,6 +54,10 @@
         transform: scaleX(1);
         visibility: visible;
     }
+    .header .hidden-tools .hidden-menu .hidden-menu-link:active::after,
+    .header .hidden-tools .hidden-search .hidden-search-link:active::after {
+        display: none;
+    }
     .header .hidden-tools .hidden-menu .hidden-menu-link .menu-btn,
     .header .hidden-tools .hidden-search .hidden-search-link .search-btn {
         font-size: 28px;
@@ -109,7 +113,7 @@
     }
     .services {
         margin-top: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
     .services .element {
         margin-right: 0;
@@ -118,9 +122,11 @@
     }
     .services .element .element-img {
         width: 100%;
-        height: 100px;
-        display: block;
-        margin-bottom: 0px;
+        height: 80px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
     }
     .services .element .element-img img {
         width: auto;
@@ -130,9 +136,20 @@
     .services .element .element-name {
         font-size: 16px;
     }
+    .services .owl-carousel .owl-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-40%);
+    }
     .courses {
         padding-top: 30px;
         padding-bottom: 50px;
+    }
+    .courses-title .show-more {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .item {
         margin-bottom: 20px;
@@ -341,6 +358,8 @@
     .side-menu .language ul li a {
         color: #fff;
         text-decoration: none;
+        font-family: "medium";
+        font-size: 13px;
     }
     .side-menu .small-hot-line {
         margin-top: 20px;
@@ -463,6 +482,10 @@
         transform: scaleX(1);
         visibility: visible;
     }
+    .header .hidden-tools .hidden-menu .hidden-menu-link:active::after,
+    .header .hidden-tools .hidden-search .hidden-search-link:active::after {
+        display: none;
+    }
     .header .hidden-tools .hidden-menu .hidden-menu-link .menu-btn,
     .header .hidden-tools .hidden-search .hidden-search-link .search-btn {
         font-size: 28px;
@@ -518,7 +541,7 @@
     }
     .services {
         margin-top: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
     .services .element {
         margin-right: 0;
@@ -527,9 +550,11 @@
     }
     .services .element .element-img {
         width: 100%;
-        height: 100px;
-        display: block;
-        margin-bottom: 0px;
+        height: 80px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
     }
     .services .element .element-img img {
         width: auto;
@@ -538,6 +563,11 @@
     }
     .services .element .element-name {
         font-size: 16px;
+    }
+    .services .owl-carousel .owl-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-40%);
     }
     .courses {
         padding-top: 30px;
@@ -750,6 +780,8 @@
     .side-menu .language ul li a {
         color: #fff;
         text-decoration: none;
+        font-family: "medium";
+        font-size: 13px;
     }
     .side-menu .small-hot-line {
         margin-top: 20px;
