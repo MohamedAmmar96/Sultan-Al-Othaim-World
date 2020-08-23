@@ -522,6 +522,9 @@ body {
 
 .main-slider .owl-carousel button.owl-dot span {
     background-color: #575757;
+    width: 100%;
+    height: 100%;
+    margin: 0;
     transition: all 0.4s ease-in-out;
 }
 
@@ -562,11 +565,18 @@ body {
 }
 
 .services .element .element-img {
-    width: 100%;
-    margin-bottom: 25px;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
 .services .element .element-img img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     transition: all 0.4s ease-in-out;
 }
 
@@ -708,23 +718,33 @@ body {
     text-decoration: line-through;
 }
 
-.owl-carousel button.owl-dot {
+.courses .owl-carouse .owl-dots {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.courses .owl-carousel button.owl-dot {
+    outline: 0;
     width: 10px;
     height: 10px;
     margin: 3px;
-    outline: 0;
 }
 
-.owl-carousel button.owl-dot span {
+.courses .owl-carousel button.owl-dot span {
     background-color: #acacac;
     transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
-.owl-carousel .owl-dots .owl-dot:hover span {
+.courses .owl-carousel .owl-dots .owl-dot:hover span {
     background-color: #1da1f2;
 }
 
-.owl-carousel .owl-dots .owl-dot.active span {
+.courses .owl-carousel .owl-dots .owl-dot.active span {
     background-color: #1da1f2;
 }
 
@@ -734,6 +754,36 @@ body {
 .products {
     padding-top: 70px;
     padding-bottom: 80px;
+}
+
+.products .owl-carouse .owl-dots {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.products .owl-carousel button.owl-dot {
+    outline: 0;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+}
+
+.products .owl-carousel button.owl-dot span {
+    background-color: #acacac;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.products .owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: #1da1f2;
+}
+
+.products .owl-carousel .owl-dots .owl-dot.active span {
+    background-color: #1da1f2;
 }
 
 

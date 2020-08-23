@@ -113,37 +113,38 @@
     }
     .services {
         margin-top: 40px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     .services .element {
         margin-left: 0;
+        margin-bottom: 20px;
         align-items: center;
         width: 100%;
-    }
-    .services .element .element-img {
-        width: 100%;
-        height: 80px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-    .services .element .element-img img {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
     }
     .services .element .element-name {
         font-size: 16px;
     }
     .services .owl-carousel .owl-dots {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-40%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
     }
-    .courses {
-        padding-top: 30px;
-        padding-bottom: 50px;
+    .services .owl-carousel button.owl-dot {
+        width: 10px;
+        height: 10px;
+        margin: 3px;
+    }
+    .services .owl-carousel button.owl-dot span {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .services .owl-carousel .owl-dots .owl-dot:hover span {
+        background-color: #1da1f2;
+    }
+    .services .owl-carousel .owl-dots .owl-dot.active span {
+        background-color: #1da1f2;
     }
     .courses-title .show-more {
         position: absolute;
@@ -541,33 +542,38 @@
     }
     .services {
         margin-top: 40px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     .services .element {
         margin-left: 0;
+        margin-bottom: 20px;
         align-items: center;
         width: 100%;
-    }
-    .services .element .element-img {
-        width: 100%;
-        height: 80px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-    }
-    .services .element .element-img img {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
     }
     .services .element .element-name {
         font-size: 16px;
     }
     .services .owl-carousel .owl-dots {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-40%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+    }
+    .services .owl-carousel button.owl-dot {
+        width: 10px;
+        height: 10px;
+        margin: 3px;
+    }
+    .services .owl-carousel button.owl-dot span {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .services .owl-carousel .owl-dots .owl-dot:hover span {
+        background-color: #1da1f2;
+    }
+    .services .owl-carousel .owl-dots .owl-dot.active span {
+        background-color: #1da1f2;
     }
     .courses {
         padding-top: 30px;
